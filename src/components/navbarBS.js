@@ -28,9 +28,9 @@ function NavbarBS() {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Navbar.Brand href="/" className="custom-link">
-              Navbar
+              Odam SVAY
             </Navbar.Brand>
-            <Nav className="me-auto">
+            <Nav className="navbar-nav ms-auto">
               <Nav.Link href="/Home" className="custom-link">
                 Home
               </Nav.Link>

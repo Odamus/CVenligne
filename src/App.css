@@ -1,0 +1,24 @@
+body {
+    font-family: 'Nunito Sans', sans-serif;
+  }
+
+/*Nav*/ 
+  .custom-link {
+    color: #eee;
+    font-size: 2rem;
+  }
+
+.custom-link:hover {
+    color: #EEE;
+    opacity: 0.8;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 60%; /* Assurez-vous que les liens prennent toute la largeur disponible */
+  }
+  
+  .space-links .nav-link {
+    margin-left: 30px; /* Espacement entre les liens */
+  }  
