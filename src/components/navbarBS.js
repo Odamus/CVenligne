@@ -9,13 +9,8 @@ function NavbarBS() {
     <div>
       <Navbar
         expand="lg"
-        sticky="top"
-        style={{
-          backgroundImage: "url('/img/banner.jpg')", // Remplace par ton URL d'image
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          height: "200px", // Ajuste la hauteur de la navbar
-        }}
+        fixed="top"
+        style={{ backgroundSize: "0", backgroundColor: "#444" }}
       >
         <Container>
           <img
@@ -27,7 +22,7 @@ function NavbarBS() {
           />{" "}
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Navbar.Brand href="/" className="custom-link">
+            <Navbar.Brand href="/Home" className="custom-link">
               Odam SVAY
             </Navbar.Brand>
             <Nav className="navbar-nav ms-auto">
