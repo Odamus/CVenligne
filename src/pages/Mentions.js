@@ -1,11 +1,11 @@
 import React from "react";
 
-const Portfolio = () => {
+function Mentions() {
   return (
     <div>
       <h1>Hello</h1>
     </div>
   );
-};
+}
 
-export default Portfolio;
+export default Mentions;

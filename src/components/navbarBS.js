@@ -27,13 +27,22 @@ function NavbarBS() {
             </Navbar.Brand>
             <Nav className="navbar-nav ms-auto">
               <Nav.Link href="/Home" className="custom-link">
-                Home
+                Accueil
+              </Nav.Link>
+              <Nav.Link href="/Services" className="custom-link">
+                Services
+              </Nav.Link>
+              <Nav.Link href="/Realisations" className="custom-link">
+                Réalisations
+              </Nav.Link>
+              <Nav.Link href="/Blog" className="custom-link">
+                Blog
               </Nav.Link>
               <Nav.Link href="/Contact" className="custom-link">
                 Contact
               </Nav.Link>
-              <Nav.Link href="/Portfolio" className="custom-link">
-                Portfolio
+              <Nav.Link href="/Mentions" className="custom-link">
+                Mentions légales
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
