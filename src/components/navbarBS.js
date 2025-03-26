@@ -12,36 +12,36 @@ function NavbarBS() {
         fixed="top"
         style={{ backgroundSize: "0", backgroundColor: "#444" }}
       >
-        <Container>
+        <Container fluid>
           <img
             alt=""
             src={process.env.PUBLIC_URL + "/img/favicon.png"}
             width="30"
             height="30"
-            className="d-inline-block align-top"
+            className="shadow-sm"
           />{" "}
+          <Navbar.Brand href="/Home" className="ms-4 custom-link">
+            Odam SVAY
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Navbar.Brand href="/Home" className="custom-link">
-              Odam SVAY
-            </Navbar.Brand>
-            <Nav className="navbar-nav ms-auto">
-              <Nav.Link href="/Home" className="custom-link">
+            <Nav className="ml-auto w-100 justify-content-end me-5">
+              <Nav.Link href="/Home" className="me-4 custom-link">
                 Accueil
               </Nav.Link>
-              <Nav.Link href="/Services" className="custom-link">
+              <Nav.Link href="/Services" className="me-4 custom-link">
                 Services
               </Nav.Link>
-              <Nav.Link href="/Realisations" className="custom-link">
+              <Nav.Link href="/Realisations" className="me-4 custom-link">
                 Réalisations
               </Nav.Link>
-              <Nav.Link href="/Blog" className="custom-link">
+              <Nav.Link href="/Blog" className="me-4 custom-link">
                 Blog
               </Nav.Link>
-              <Nav.Link href="/Contact" className="custom-link">
+              <Nav.Link href="/Contact" className="me-4 custom-link">
                 Contact
               </Nav.Link>
-              <Nav.Link href="/Mentions" className="custom-link">
+              <Nav.Link href="/Mentions" className="me-4 custom-link">
                 Mentions légales
               </Nav.Link>
             </Nav>

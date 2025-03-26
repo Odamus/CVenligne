@@ -1,0 +1,19 @@
+h1 {
+    font-size: 4rem;
+    color: white;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+.background-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3); /* Fond noir avec transparence */
+    z-index: 1;
+}   

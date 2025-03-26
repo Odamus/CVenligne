@@ -1,4 +1,5 @@
 import React from "react";
+import "../pages/Home.css";
 import {
   Container,
   Row,
@@ -24,14 +25,14 @@ function Home() {
           backgroundPosition: "center",
           minHeight: "100vh",
         }}
-        className="d-flex flex-column justify-content-center align-items-center"
+        className="d-flex flex-column justify-content-center align-items-center background-section"
       >
         <Row className="text-center">
           <Col>
-            <h1 className="text-white">Bienvenue sur notre site</h1>
-            <p className="text-white">
-              Explorez nos services et nos compétences exceptionnelles !
-            </p>
+            <h1 className="text-white">
+              Bienvenue sur mon site, je suis Odam SVAY
+            </h1>
+            <h2 className="text-white">Développeur web junior</h2>
             <Button variant="primary" size="lg" onClick={scrollToSection}>
               En savoir plus
             </Button>
