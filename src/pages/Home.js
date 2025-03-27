@@ -8,6 +8,7 @@ import {
   ProgressBar,
   Card,
   Image,
+  DropdownDivider,
 } from "react-bootstrap";
 
 function Home() {
@@ -16,7 +17,6 @@ function Home() {
   };
   return (
     <div>
-      {/* Première section - Titre, sous-titre et bouton avec une image de fond */}
       <Container
         fluid
         style={{
@@ -25,22 +25,21 @@ function Home() {
           backgroundPosition: "center",
           minHeight: "100vh",
         }}
-        className="d-flex flex-column justify-content-center align-items-center background-section"
+        className="d-flex flex-column justify-content-center align-items-center"
       >
-        <Row className="text-center">
-          <Col>
-            <h1 className="text-white">
-              Bienvenue sur mon site, je suis Odam SVAY
-            </h1>
-            <h2 className="text-white">Développeur web junior</h2>
-            <Button variant="primary" size="lg" onClick={scrollToSection}>
-              En savoir plus
-            </Button>
-          </Col>
-        </Row>
+        <div className="background-section">
+          <Row className="text-center">
+            <Col>
+              <h1 className="text-white">Bienvenue, je suis John DOE</h1>
+              <h2 className="text-white">Développeur web full stack</h2>
+              <Button variant="primary" size="lg" onClick={scrollToSection}>
+                En savoir plus
+              </Button>
+            </Col>
+          </Row>
+        </div>
       </Container>
 
-      {/* Deuxième section : Présentation et compétences dans un cadre blanc */}
       <Container
         fluid
         id="section2"
@@ -48,57 +47,94 @@ function Home() {
         style={{ backgroundColor: "#fff" }}
       >
         <Row className="justify-content-center">
-          <Col md={8} sm={12}>
+          <Col className="col-lg-8 col-sm-12">
             <Card className="shadow-lg">
               <Card.Body>
                 <Row className="align-items-center">
                   {/* Présentation à gauche */}
                   <Col
                     md={6}
-                    className="h-100 d-flex flex-column align-items-center"
+                    className="h-100 d-flex flex-column align-items-center col-md-6"
                   >
-                    <h2>Notre Présentation</h2>
-                    <p>
-                      Nous sommes une équipe passionnée, spécialisée dans les
-                      solutions web innovantes. <br />
-                      Avec une expérience de plusieurs années, nous apportons
-                      des solutions créatives et techniques à nos clients.
-                    </p>
+                    <Row>
+                      <Col className="col-md-8 offset-md-2">
+                        <h2>A propos</h2>
+                        <DropdownDivider className="divider" />
+                        <p>
+                          Pasioné par l'informatique et les nouvelles
+                          technologies, j'ai suivie une formation
+                          d'intégrateur-développeur web au CEF. Au cours de
+                          cette formation, j'ai pu acquérir des bases solides
+                          pour travailler dans le domaine du développement web{" "}
+                          <br />
+                          Basé à Lyon, je suis en recherche d'une alternance au
+                          sein d'une agence digitale pour consolider ma
+                          formation de développpeur web full stack. <br />
+                          J'accorde une attention particulière à la qualité du
+                          code que j'écris et je respecte les bonnes pratiques
+                          du web.
+                        </p>
+                      </Col>
+                    </Row>
                   </Col>
 
                   {/* Photo à droite */}
-                  <Col md={6} className="text-center">
-                    <Image
-                      src="/img/john-doe-about.jpg"
-                      alt="Odam"
-                      rounded
-                      fluid
-                    />
+                  <Col className="text-center col-md-6">
+                    <Row>
+                      <Col>
+                        <Image
+                          src="/img/john-doe-about.jpg"
+                          alt="Odam"
+                          rounded
+                          fluid
+                        />
+                      </Col>
+                    </Row>
+                    <Row>
+                      <Col>
+                        <Row className="text-center mt-4">
+                          <Col>
+                            <h3>Nos Compétences</h3>
+                            <div className="mb-4">
+                              <h5>Développement Web</h5>
+                              <ProgressBar
+                                now={20}
+                                label="20%"
+                                variant="info"
+                              />
+                            </div>
+                            <div className="mb-4">
+                              <h5>Design UI/UX</h5>
+                              <ProgressBar
+                                now={75}
+                                label="75%"
+                                variant="info"
+                              />
+                            </div>
+                            <div className="mb-4">
+                              <h5>Marketing Digital</h5>
+                              <ProgressBar
+                                now={65}
+                                label="65%"
+                                variant="info"
+                              />
+                            </div>
+                            <div className="mb-4">
+                              <h5>Gestion de Projet</h5>
+                              <ProgressBar
+                                now={90}
+                                label="90%"
+                                variant="info"
+                              />
+                            </div>
+                          </Col>
+                        </Row>
+                      </Col>
+                    </Row>
                   </Col>
                 </Row>
 
                 {/* Compétences sous la photo */}
-                <Row className="text-center mt-4">
-                  <Col md={{ span: 6, offset: 6 }}>
-                    <h3>Nos Compétences</h3>
-                    <div className="mb-4">
-                      <h5>Développement Web</h5>
-                      <ProgressBar now={85} label="85%" variant="info" />
-                    </div>
-                    <div className="mb-4">
-                      <h5>Design UI/UX</h5>
-                      <ProgressBar now={75} label="75%" />
-                    </div>
-                    <div className="mb-4">
-                      <h5>Marketing Digital</h5>
-                      <ProgressBar now={65} label="65%" />
-                    </div>
-                    <div className="mb-4">
-                      <h5>Gestion de Projet</h5>
-                      <ProgressBar now={90} label="90%" />
-                    </div>
-                  </Col>
-                </Row>
               </Card.Body>
             </Card>
           </Col>
