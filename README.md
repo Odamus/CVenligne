@@ -73,10 +73,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 Installation de react router
 
-### `npm install react-bootstrap bootstrap` for router
+### `npm install react-bootstrap bootstrap react-icons` for all and icons
 
-Installation de react bootstrap
+Installation de react bootstrap et icons
 
-### `npm install bootstrap` for router
+### `npm install bootstrap` for bootstrap
 
 Installation de bootstrap
