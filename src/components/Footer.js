@@ -23,9 +23,21 @@ function Footer() {
   }, []);
 
   return (
-    <footer className="mt-5 pt-5">
-      <Container>
-        <Row>
+    <footer
+      className="mt-5 pt-5 justify-content-around"
+      style={{ with: "100%" }}
+    >
+      <Container
+        className="text-center"
+        style={{
+          backgroundColor: "#F0F0F2",
+          width: "100%",
+          paddingTop: "20px",
+          marginLeft: "0px",
+          marginRight: "0px",
+        }}
+      >
+        <Row style={{ width: "100%" }}>
           {/* Colonne 1 */}
           <Col md={3}>
             <h5>John Doe</h5>
@@ -116,15 +128,6 @@ function Footer() {
           </Col>
         </Row>
 
-        {/* Copyright */}
-        <Row>
-          <Col className="text-center mt-4">
-            <p>
-              &copy; {new Date().getFullYear()} John Doe. Tous droits réservés.
-            </p>
-          </Col>
-        </Row>
-
         {/* Bouton Retour en haut */}
         {showScroll && (
           <Button
@@ -137,6 +140,27 @@ function Footer() {
           </Button>
         )}
       </Container>
+
+      {/* Copyright */}
+      <Row style={{ marginTop: "0px" }}>
+        <Col
+          className="text-center"
+          onClick={scrollToTop}
+          style={{
+            backgroundColor: "#444",
+            color: "white",
+            textAlign: "center",
+            padding: "10px 0",
+            marginBottom: "20px",
+            marginTop: "0px", // Espace entre le footer et la ligne de copyright
+            width: "100%", // Le fond #444 occupe toute la largeur
+          }}
+        >
+          <p style={{ marginBottom: "0px" }}>
+            &copy; {new Date().getFullYear()} Designed by John Doe.
+          </p>
+        </Col>
+      </Row>
     </footer>
   );
 }
