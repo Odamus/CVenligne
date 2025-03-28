@@ -8,6 +8,7 @@ import "./App.css";
 import Services from "./pages/Services";
 import Blog from "./pages/Blog";
 import Mentions from "./pages/Mentions";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/Contact" element={<Contact />}></Route>
         <Route path="/Mentions" element={<Mentions />}></Route>
       </Routes>
+      <Footer />
     </div>
   );
 }
