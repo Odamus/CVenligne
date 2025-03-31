@@ -1,0 +1,31 @@
+/* Suppression de la soulignure des liens */
+.no-underline {
+    text-decoration: none !important;
+  }
+  
+  /* Espacement entre le signe '>' et le texte du lien */
+  .text-primary {
+    margin-right: 8px;  /* Vous pouvez ajuster cette valeur selon vos besoins */
+  }
+  
+  /* Personnalisation responsive de la taille de la police pour les liens */
+  a {
+    font-size: 1rem; /* Taille de base pour les liens */
+  }
+  
+  @media (max-width: 768px) {
+    a {
+      font-size: 0.9rem; /* Taille plus petite sur les petits écrans */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    a {
+      font-size: 0.8rem; /* Taille encore plus petite sur les très petits écrans */
+    }
+  }
+
+  h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }

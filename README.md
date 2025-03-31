@@ -80,3 +80,7 @@ Installation de react bootstrap et icons
 ### `npm install bootstrap` for bootstrap
 
 Installation de bootstrap
+
+### `npm install react-router-hash-link` for hash link
+
+Installation de navigation par hash

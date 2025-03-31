@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
+import { HashLink } from "react-router-hash-link";
+import "../components/Footer.css";
 
 function Footer() {
   const [showScroll, setShowScroll] = useState(false);
@@ -39,9 +41,9 @@ function Footer() {
       <Container className="text-center">
         <Row>
           {/* Colonne 1 */}
-          <Col md={3}>
+          <Col md={3} className="text-start">
             <h5>John Doe</h5>
-            <p>1234 Some Street, Some City, Some Country</p>
+            <address> 1234 Some Street, Some City, Some Country</address>
             <p>+123 456 7890</p>
             <div>
               <a
@@ -72,25 +74,49 @@ function Footer() {
 
           {/* Colonne 2 */}
           <Col md={3}>
-            <h5>Pages</h5>
-            <ul>
+            <h5 className="text-center">Liens utiles</h5>
+            <ul
+              className="list-unstyled"
+              style={{
+                paddingLeft: "0",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "start",
+                marginLeft: "100px",
+              }}
+            >
               <li>
-                <a href="/Home">Accueil</a>
+                <span className="text-primary"> &gt; </span>{" "}
+                <a className="text-dark no-underline" href="/Home">
+                  Accueil
+                </a>
               </li>
               <li>
-                <a href="/Services">Services</a>
+                <span className="text-primary"> &gt; </span>{" "}
+                <HashLink
+                  to="/Home#section2"
+                  className="text-dark no-underline"
+                >
+                  À propos
+                </HashLink>
               </li>
               <li>
-                <a href="/Realisations">Réalisations</a>
+                <span className="text-primary"> &gt; </span>{" "}
+                <a className="text-dark no-underline" href="/Services">
+                  Services
+                </a>
               </li>
               <li>
-                <a href="/Blog">Blog</a>
+                <span className="text-primary"> &gt; </span>{" "}
+                <a className="text-dark no-underline" href="/Contact">
+                  Me contacter
+                </a>
               </li>
               <li>
-                <a href="/Contact">Contact</a>
-              </li>
-              <li>
-                <a href="/Mentions">Mentions légales</a>
+                <span className="text-primary"> &gt; </span>{" "}
+                <a className="text-dark no-underline" href="/Mentions">
+                  Mentions légales
+                </a>
               </li>
             </ul>
           </Col>

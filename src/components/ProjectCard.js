@@ -1,7 +1,13 @@
 import React from "react";
 import { Card, Button } from "react-bootstrap";
 
-const ProjectCard = ({ title, description, image, link }) => {
+const ProjectCard = ({
+  title,
+  description,
+  image,
+  link,
+  footerDescription,
+}) => {
   return (
     <Card style={{ width: "100%" }} className="text-center">
       <Card.Img variant="top" src={image} alt={title} />
@@ -14,11 +20,11 @@ const ProjectCard = ({ title, description, image, link }) => {
           Voir
         </Button>
       </Card.Body>
-      <div style={{ backgroundColor: "#f0f0f2", padding: "10px" }}>
+      <Card.Footer style={{ backgroundColor: "#f0f0f2", padding: "10px" }}>
         <p style={{ margin: 0, fontSize: "1rem", color: "#555" }}>
-          {additionalInfo}
+          {footerDescription}
         </p>
-      </div>
+      </Card.Footer>
     </Card>
   );
 };
