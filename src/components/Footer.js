@@ -25,19 +25,19 @@ function Footer() {
   return (
     <footer
       className="mt-5 pt-5 justify-content-around"
-      style={{ with: "100%" }}
+      style={{
+        backgroundColor: "#F0F0F2",
+        width: "100%",
+        paddingTop: "20px",
+        marginLeft: "0px",
+        marginRight: "0px",
+        padding: "10px 0",
+        marginTop: "0px",
+        with: "100%",
+      }}
     >
-      <Container
-        className="text-center"
-        style={{
-          backgroundColor: "#F0F0F2",
-          width: "100%",
-          paddingTop: "20px",
-          marginLeft: "0px",
-          marginRight: "0px",
-        }}
-      >
-        <Row style={{ width: "100%" }}>
+      <Container className="text-center">
+        <Row>
           {/* Colonne 1 */}
           <Col md={3}>
             <h5>John Doe</h5>
