@@ -16,9 +16,9 @@ body {
   .navbar-nav {
     display: flex;
     justify-content: space-between;
-    width: 60%; /* Assurez-vous que les liens prennent toute la largeur disponible */
+    width: 60%; 
   }
   
   .space-links .nav-link {
-    margin-left: 30px; /* Espacement entre les liens */
+    margin-left: 30px; 
   }  

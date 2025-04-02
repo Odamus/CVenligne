@@ -13,39 +13,44 @@ function Blog() {
       footerDescription: "Publié le 22 août 2022",
     },
     {
-      image: "/img/fresh-food.jpg",
+      image: "/img/croissance.jpg",
       title: "Fresh Food",
-      description: "Réalisation d'un site avec commande en ligne.",
-      link: "https://example.com/project1",
-      footerDescription: "Site réalisé avec PHP et MySQL",
+      description:
+        "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      link: "https://example.com/project2",
+      footerDescription: "Publié le 20 août 2022",
     },
     {
-      image: "/img/fresh-food.jpg",
+      image: "/img/google.jpg",
       title: "Fresh Food",
-      description: "Réalisation d'un site avec commande en ligne.",
-      link: "https://example.com/project1",
-      footerDescription: "Site réalisé avec PHP et MySQL",
+      description:
+        "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      link: "https://example.com/project3",
+      footerDescription: "Publié le 1 août 2022",
     },
     {
-      image: "/img/fresh-food.jpg",
+      image: "/img/screens.jpg",
       title: "Fresh Food",
-      description: "Réalisation d'un site avec commande en ligne.",
-      link: "https://example.com/project1",
-      footerDescription: "Site réalisé avec PHP et MySQL",
+      description:
+        "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      link: "https://example.com/project4",
+      footerDescription: "Publié le 31 juillet 2022",
     },
     {
-      image: "/img/fresh-food.jpg",
+      image: "/img/seo.jpg",
       title: "Fresh Food",
-      description: "Réalisation d'un site avec commande en ligne.",
-      link: "https://example.com/project1",
-      footerDescription: "Site réalisé avec PHP et MySQL",
+      description:
+        "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      link: "https://example.com/project5",
+      footerDescription: "Publié le 30 juillet 2022",
     },
     {
-      image: "/img/fresh-food.jpg",
+      image: "/img/technos.png",
       title: "Fresh Food",
-      description: "Réalisation d'un site avec commande en ligne.",
-      link: "https://example.com/project1",
-      footerDescription: "Site réalisé avec PHP et MySQL",
+      description:
+        "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      link: "https://example.com/project6",
+      footerDescription: "Publié le 12 juillet 2022",
     },
   ];
   return (
@@ -58,10 +63,10 @@ function Blog() {
     >
       <Container className="mt-5">
         <h1 className="text-center mb-0" style={{ marginBottom: "0px" }}>
-          Portfolio
+          Blog
         </h1>
         <p className="text-center mt-0" style={{ marginTop: "0px" }}>
-          Voici quelques-unes de mes réalisations.
+          Retrouvez ici quelques articles sur le développement web.
         </p>
         <DropdownDivider className="divider" style={{ width: "400px" }} />
         <Row>

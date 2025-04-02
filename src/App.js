@@ -13,6 +13,9 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <div className="App">
+      <head>
+        <meta name="robots" content="noindex, nofollow" />
+      </head>
       <NavbarBS />
       <Routes>
         <Route path="/Home" element={<Home />}></Route>
