@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col, DropdownDivider } from "react-bootstrap";
 import ProjectCard from "../components/ProjectCard";
+import "../pages/Realisations.css";
 
 function Realisations() {
   const projects = [
@@ -39,17 +40,36 @@ function Realisations() {
         paddingTop: "60px",
       }}
     >
-      <Container className="mt-5">
-        <h1 className="text-center mb-0" style={{ marginBottom: "0px" }}>
-          Portfolio
-        </h1>
-        <p className="text-center mt-0" style={{ marginTop: "0px" }}>
+      {/* Bannière responsive */}
+      <img
+        alt="Bannière"
+        src={process.env.PUBLIC_URL + "/img/banner.jpg"}
+        className="img-fluid shadow-sm w-100" // Utilisation de 'img-fluid' pour rendre l'image responsive
+        style={{
+          objectFit: "cover", // Assure que l'image couvre la zone sans déformer
+          height: "15vh", // Hauteur réduite (vous pouvez ajuster selon vos besoins)
+        }}
+      />
+
+      <Container className="w-100 mt-5">
+        {/* Titre de la section Portfolio */}
+        <h1 className="text-center mb-0 fs-1 fs-sm-2 fs-md-3">Portfolio</h1>
+        <p className="text-center mt-0 fs-6 fs-sm-5 fs-md-3">
           Voici quelques-unes de mes réalisations.
         </p>
+
         <DropdownDivider className="divider" style={{ width: "400px" }} />
-        <Row>
+
+        {/* Grille des projets */}
+        <Row className="justify-content-center">
           {projects.map((project, index) => (
-            <Col key={index} xs={12} sm={6} md={4} className="mb-4">
+            <Col
+              key={index}
+              xs={12}
+              sm={6}
+              md={4}
+              className="d-flex justify-content-center mb-4"
+            >
               <ProjectCard
                 title={project.title}
                 description={project.description}

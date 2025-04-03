@@ -35,16 +35,17 @@ function Footer() {
         marginRight: "0px",
         padding: "10px 0",
         marginTop: "0px",
-        with: "100%",
       }}
     >
       <Container className="text-center">
         <Row>
           {/* Colonne 1 */}
-          <Col md={3} className="text-start">
-            <h5>John Doe</h5>
-            <address> 1234 Some Street, Some City, Some Country</address>
-            <p>+123 456 7890</p>
+          <Col xs={12} sm={6} md={3} className="text-start mb-4 mb-md-0">
+            <h5 className="h4 h-md-5">John Doe</h5>
+            <address className="small">
+              1234 Some Street, Some City, Some Country
+            </address>
+            <p className="small">+123 456 7890</p>
             <div>
               <a
                 href="https://github.com/johndoe"
@@ -73,8 +74,8 @@ function Footer() {
           </Col>
 
           {/* Colonne 2 */}
-          <Col md={3}>
-            <h5 className="text-center">Liens utiles</h5>
+          <Col xs={12} sm={6} md={3}>
+            <h5 className="h4 h-md-5 text-center">Liens utiles</h5>
             <ul
               className="list-unstyled"
               style={{
@@ -122,8 +123,8 @@ function Footer() {
           </Col>
 
           {/* Colonne 3 */}
-          <Col md={3}>
-            <h5>Dernières Réalisations</h5>
+          <Col xs={12} sm={6} md={3}>
+            <h5 className="h4 h-md-5">Dernières Réalisations</h5>
             <ul>
               <li>
                 <a href="/project1">Projet 1</a>
@@ -138,8 +139,8 @@ function Footer() {
           </Col>
 
           {/* Colonne 4 */}
-          <Col md={3}>
-            <h5>Derniers Articles</h5>
+          <Col xs={12} sm={6} md={3}>
+            <h5 className="h4 h-md-5">Derniers Articles</h5>
             <ul>
               <li>
                 <a href="/blog/post1">Article 1</a>
@@ -182,7 +183,7 @@ function Footer() {
             width: "100%", // Le fond #444 occupe toute la largeur
           }}
         >
-          <p style={{ marginBottom: "0px" }}>
+          <p className="small" style={{ marginBottom: "0px" }}>
             &copy; {new Date().getFullYear()} Designed by John Doe.
           </p>
         </Col>

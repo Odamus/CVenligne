@@ -15,7 +15,7 @@ const ProjectCard = ({
         <Card.Title as="h2" className="fs-2 " style={{ fontWeight: "bold" }}>
           {title}
         </Card.Title>
-        <Card.Text className="fs-2">{description}</Card.Text>
+        <Card.Text className="fs-6 fs-sm-5 fs-md-3">{description}</Card.Text>
         <Button variant="primary" href={link} target="_blank" className="fs-2">
           Voir
         </Button>
