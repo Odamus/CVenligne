@@ -84,3 +84,7 @@ Installation de bootstrap
 ### `npm install react-router-hash-link` for hash link
 
 Installation de navigation par hash
+
+### `npm install react-leaflet@next` for leaflet
+
+Installer la carte sous leaf
