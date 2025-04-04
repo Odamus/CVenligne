@@ -29,10 +29,14 @@ function Home() {
         className="d-flex flex-column justify-content-center align-items-center"
       >
         <div className="background-section">
-          <Row className="text-center">
+          <Row className="text-center w-100">
             <Col>
-              <h1 className="text-white">Bienvenue, je suis John DOE</h1>
-              <h2 className="text-white">Développeur web full stack</h2>
+              <h1 className="text-white mb-6 fs-0 fs-sm-1 fs-md-4">
+                Bienvenue, je suis John DOE
+              </h1>
+              <h2 className="text-white mb-4 fs-2 fs-sm-6 fs-md-3">
+                Développeur web full stack
+              </h2>
               <Button variant="primary" size="lg" onClick={scrollToSection}>
                 En savoir plus
               </Button>
@@ -59,15 +63,15 @@ function Home() {
                     >
                       <Row>
                         <Col className="col-md-8 offset-md-2 d-flex flex-column">
-                          <h2 className="mt-4">A propos</h2>
+                          <h2 className="mt-4 fs-1">A propos</h2>
                           <DropdownDivider className="divider" />
                           <p className="fs-4">
-                            Passioné par l'informatique et les nouvelles
-                            technologies, j'ai suivie une formation d'
+                            Passionné par l'informatique et les nouvelles
+                            technologies, j'ai suivi une formation d'
                             <strong>intégrateur-développeur web</strong> au CEF.
                             Au cours de cette formation, j'ai pu acquérir des
                             bases solides pour travailler dans le domaine du
-                            <strong>développement web</strong>{" "}
+                            <strong>développement web</strong>
                           </p>
                           <br />
                           <p className="fs-4">
@@ -104,25 +108,33 @@ function Home() {
                             <Col>
                               <h3>Mes Compétences</h3>
                               <div className="mb-4">
-                                <h5 className="d-flex text-left">HTML 90%</h5>
+                                <h5 className="d-flex text-left fs-4">
+                                  HTML 90%
+                                </h5>
                                 <ProgressBar now={90} variant="danger" />
                               </div>
                               <div className="mb-4">
-                                <h5 className="d-flex text-left">CSS3 80%</h5>
+                                <h5 className="d-flex text-left fs-4">
+                                  CSS3 80%
+                                </h5>
                                 <ProgressBar now={80} variant="info" />
                               </div>
                               <div className="mb-4">
-                                <h5 className="d-flex text-left">
+                                <h5 className="d-flex text-left fs-4">
                                   JAVASCRIPT 70%
                                 </h5>
                                 <ProgressBar now={70} variant="warning" />
                               </div>
                               <div className="mb-4">
-                                <h5 className="d-flex text-left">PHP 60%</h5>
+                                <h5 className="d-flex text-left fs-4">
+                                  PHP 60%
+                                </h5>
                                 <ProgressBar now={60} variant="success" />
                               </div>
                               <div className="mb-4">
-                                <h5 className="d-flex text-left">REACT 50%</h5>
+                                <h5 className="d-flex text-left fs-4">
+                                  REACT 50%
+                                </h5>
                                 <ProgressBar now={50} variant="info" />
                               </div>
                             </Col>
