@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import { Container, Row, Col, Form, Button } from "react-bootstrap";
+import { Container, Row, Col, Card, Form, Button } from "react-bootstrap";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import "leaflet/dist/leaflet.css"; // Assurez-vous d'avoir installé Leaflet
 import "../pages/Contact.css"; // Importez votre fichier CSS personnalisé
 
 function Contact() {
@@ -63,7 +61,6 @@ function Contact() {
             <Col xs={12} sm={8} md={6} lg={5}>
               <Form onSubmit={handleSubmit}>
                 <Form.Group controlId="formName">
-                  <Form.Label className="text-dark">Nom</Form.Label>
                   <Form.Control
                     type="text"
                     placeholder="Votre nom"
@@ -75,7 +72,6 @@ function Contact() {
                 </Form.Group>
 
                 <Form.Group controlId="formEmail">
-                  <Form.Label className="text-dark">Email</Form.Label>
                   <Form.Control
                     type="email"
                     placeholder="Votre email"
@@ -87,9 +83,6 @@ function Contact() {
                 </Form.Group>
 
                 <Form.Group controlId="formPhone">
-                  <Form.Label className="text-dark">
-                    Numéro de téléphone
-                  </Form.Label>
                   <Form.Control
                     type="tel"
                     placeholder="Votre numéro"
@@ -101,7 +94,6 @@ function Contact() {
                 </Form.Group>
 
                 <Form.Group controlId="formSubject">
-                  <Form.Label className="text-dark">Sujet</Form.Label>
                   <Form.Control
                     type="text"
                     placeholder="Le sujet de votre message"
@@ -113,7 +105,6 @@ function Contact() {
                 </Form.Group>
 
                 <Form.Group controlId="formMessage">
-                  <Form.Label className="text-dark">Message</Form.Label>
                   <Form.Control
                     as="textarea"
                     rows={4}
@@ -145,21 +136,21 @@ function Contact() {
               </p>
 
               {/* Carte Google Map */}
-              <MapContainer
-                center={[51.505, -0.09]} // Coordonnées d'exemple, remplacez-les par celles de John Doe
-                zoom={13}
-                style={{ height: "300px", width: "100%" }}
-              >
-                <TileLayer
-                  url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                  attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                />
-                <Marker position={[51.505, -0.09]}>
-                  <Popup>
-                    John Doe - 1234 Some Street, Some City, Some Country
-                  </Popup>
-                </Marker>
-              </MapContainer>
+              <Card>
+                <Card.Body>
+                  <Card.Title>Carte Google Map</Card.Title>
+                  <iframe
+                    title="google map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2781.415607701256!2d4.799144615573987!3d45.77984347910598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ebb0f03b6f5d%3A0xd1f7ad29980c8e64!2s40%20Rue%20Laure%20Diebold%2C%2069009%20Lyon!5e0!3m2!1sfr!2sfr!4v1713025841662!5m2!1sfr!2sfr"
+                    width="100%"
+                    height="500"
+                    style={{ border: 0 }}
+                    allowFullScreen=""
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  />
+                </Card.Body>
+              </Card>
             </Col>
           </Row>
         </Container>
