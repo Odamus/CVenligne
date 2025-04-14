@@ -1,26 +1,36 @@
 
-  
-  /* Styles pour rendre la page plus lisible sur les petits écrans */
-  @media (max-width: 576px) {
-    h1 {
-      font-size: 1.8rem;
-    }
-  
-    h2 {
-      font-size: 1.5rem;
-    }
-  
-    p {
-      font-size: 0.9rem;
-    }
-  
-    .form-control, .btn {
-      font-size: 0.9rem;
-    }
+.contact-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Responsive titres */
+.contact-title {
+  font-size: 2.8rem;
+}
+
+.contact-subtitle {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .contact-title {
+    font-size: 2rem;
   }
-  
-  /* Optionnel : Styles pour la carte */
-  .leaflet-container {
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+
+  .contact-subtitle {
+    font-size: 1rem;
   }
+
+  .map-responsive iframe {
+    height: 200px !important;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .form-control {
+    font-size: 0.95rem;
+  }
+}

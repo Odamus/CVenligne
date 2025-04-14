@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Card, Form, Button } from "react-bootstrap";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
-import "../pages/Contact.css"; // Importez votre fichier CSS personnalisé
+import "../pages/Contact.css"; // On l'utilise pour quelques ajustements mobiles
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -19,7 +19,6 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Traitement du formulaire
     alert("Formulaire soumis !");
     setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
   };
@@ -40,27 +39,25 @@ function Contact() {
         }}
       >
         <Container
-          style={{
-            backgroundColor: "white",
-            color: "black",
-          }}
+          fluid="md"
+          className="p-4 rounded shadow contact-container"
+          style={{ backgroundColor: "white", color: "black" }}
         >
-          {/* Titre de la page */}
-          <Row className="text-center">
+          {/* Titre */}
+          <Row className="text-center mb-4">
             <Col xs={12}>
-              <h1 className="text-dark display-4">Contactez-moi</h1>
-              <p className="text-dark lead">
+              <h1 className="text-dark contact-title">Contactez-moi</h1>
+              <p className="text-dark contact-subtitle">
                 Je serai heureux de vous répondre.
               </p>
             </Col>
           </Row>
 
-          {/* Formulaire de contact et coordonnées */}
-          <Row className="justify-content-center">
+          <Row className="g-4">
             {/* Formulaire */}
-            <Col xs={12} sm={8} md={6} lg={5}>
+            <Col xs={12} lg={6}>
               <Form onSubmit={handleSubmit}>
-                <Form.Group controlId="formName">
+                <Form.Group className="mb-3" controlId="formName">
                   <Form.Control
                     type="text"
                     placeholder="Votre nom"
@@ -71,7 +68,7 @@ function Contact() {
                   />
                 </Form.Group>
 
-                <Form.Group controlId="formEmail">
+                <Form.Group className="mb-3" controlId="formEmail">
                   <Form.Control
                     type="email"
                     placeholder="Votre email"
@@ -82,7 +79,7 @@ function Contact() {
                   />
                 </Form.Group>
 
-                <Form.Group controlId="formPhone">
+                <Form.Group className="mb-3" controlId="formPhone">
                   <Form.Control
                     type="tel"
                     placeholder="Votre numéro"
@@ -93,7 +90,7 @@ function Contact() {
                   />
                 </Form.Group>
 
-                <Form.Group controlId="formSubject">
+                <Form.Group className="mb-3" controlId="formSubject">
                   <Form.Control
                     type="text"
                     placeholder="Le sujet de votre message"
@@ -104,7 +101,7 @@ function Contact() {
                   />
                 </Form.Group>
 
-                <Form.Group controlId="formMessage">
+                <Form.Group className="mb-3" controlId="formMessage">
                   <Form.Control
                     as="textarea"
                     rows={4}
@@ -116,39 +113,46 @@ function Contact() {
                   />
                 </Form.Group>
 
-                <Button variant="primary" type="submit" className="mt-3">
+                <Button variant="primary" type="submit" className="w-100">
                   Envoyer
                 </Button>
               </Form>
             </Col>
 
-            {/* Coordonnées de John Doe */}
-            <Col xs={12} sm={8} md={6} lg={5} className="mt-4 mt-md-0">
-              <h2 className="text-dark">Coordonnées de John Doe</h2>
-              <p className="text-dark">
-                <FaMapMarkerAlt /> 40 Rue Laure Diebold, 69009 Lyon, France
-              </p>
-              <p className="text-dark">
-                <FaPhoneAlt /> 06 20 30 40 50
-              </p>
-              <p className="text-dark">
-                <FaEnvelope /> johndoe@example.com
-              </p>
+            {/* Coordonnées */}
+            <Col xs={12} lg={6}>
+              <div className="mb-4">
+                <h2 className="text-dark fs-5">Coordonnées de John Doe</h2>
+                <p className="text-dark mb-2">
+                  <FaMapMarkerAlt className="me-2" />
+                  40 Rue Laure Diebold, 69009 Lyon
+                </p>
+                <p className="text-dark mb-2">
+                  <FaPhoneAlt className="me-2" />
+                  06 20 30 40 50
+                </p>
+                <p className="text-dark mb-3">
+                  <FaEnvelope className="me-2" />
+                  johndoe@example.com
+                </p>
+              </div>
 
-              {/* Carte Google Map */}
+              {/* Google Map */}
               <Card>
                 <Card.Body>
-                  <Card.Title>Carte Google Map</Card.Title>
-                  <iframe
-                    title="google map"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2781.415607701256!2d4.799144615573987!3d45.77984347910598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ebb0f03b6f5d%3A0xd1f7ad29980c8e64!2s40%20Rue%20Laure%20Diebold%2C%2069009%20Lyon!5e0!3m2!1sfr!2sfr!4v1713025841662!5m2!1sfr!2sfr"
-                    width="100%"
-                    height="500"
-                    style={{ border: 0 }}
-                    allowFullScreen=""
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                  />
+                  <Card.Title className="fs-6">Carte Google Map</Card.Title>
+                  <div className="map-responsive">
+                    <iframe
+                      title="google map"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2781.415607701256!2d4.799144615573987!3d45.77984347910598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ebb0f03b6f5d%3A0xd1f7ad29980c8e64!2s40%20Rue%20Laure%20Diebold%2C%2069009%20Lyon!5e0!3m2!1sfr!2sfr!4v1713025841662!5m2!1sfr!2sfr"
+                      width="100%"
+                      height="250"
+                      style={{ border: 0 }}
+                      allowFullScreen=""
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                    />
+                  </div>
                 </Card.Body>
               </Card>
             </Col>
