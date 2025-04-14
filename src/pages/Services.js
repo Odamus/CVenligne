@@ -25,7 +25,6 @@ function Services() {
         style={{ width: "400px", marginBottom: 60, marginTop: 0 }}
       />
 
-      {/* Trois services */}
       <Container style={{ textAlign: "center" }}>
         <Row className="mt-4">
           {/* Service UX Design */}
