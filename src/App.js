@@ -18,7 +18,7 @@ function App() {
       </head>
       <NavbarBS />
       <Routes>
-        <Route path="/Home" element={<Home />}></Route>
+        <Route path="/" element={<Home />}></Route>
         <Route path="/Services" element={<Services />}></Route>
         <Route path="/Realisations" element={<Realisations />}></Route>
         <Route path="/Blog" element={<Blog />}></Route>

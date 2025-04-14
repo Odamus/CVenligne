@@ -20,13 +20,13 @@ function NavbarBS() {
             height="30"
             className="shadow-sm"
           />{" "}
-          <Navbar.Brand href="/Home" className="ms-4 custom-link">
+          <Navbar.Brand href="/" className="ms-4 custom-link">
             Odam SVAY
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ml-auto w-100 justify-content-end me-5">
-              <Nav.Link href="/Home" className="me-4 custom-link">
+              <Nav.Link href="/" className="me-4 custom-link">
                 Accueil
               </Nav.Link>
               <Nav.Link href="/Services" className="me-4 custom-link">
