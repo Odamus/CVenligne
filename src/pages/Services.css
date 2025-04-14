@@ -35,7 +35,7 @@
   
   .service-card .card-title {
     font-weight: bold;
-    color: #007bff; /* Couleur bleue pour le titre */
+    color: #007bff; 
   }
   
   .service-card .card-text {
@@ -45,4 +45,8 @@
   .service-card .btn-primary {
     background-color: #007bff;
     border-color: #007bff;
+  }
+
+  .main-title {
+    margin-bottom: 10px;
   }

@@ -63,20 +63,16 @@ function Realisations() {
         {/* Grille des projets */}
         <Row className="justify-content-center">
           {projects.map((project, index) => (
-            <Col
-              key={index}
-              xs={12}
-              sm={6}
-              md={4}
-              className="d-flex justify-content-center mb-4"
-            >
-              <ProjectCard
-                title={project.title}
-                description={project.description}
-                image={project.image}
-                link={project.link}
-                footerDescription={project.footerDescription}
-              />
+            <Col key={index} xs={12} sm={6} md={4} className={`d-flex mb-4`}>
+              <div className="w-100 h-100 d-flex">
+                <ProjectCard
+                  title={project.title}
+                  description={project.description}
+                  image={project.image}
+                  link={project.link}
+                  footerDescription={project.footerDescription}
+                />
+              </div>
             </Col>
           ))}
         </Row>

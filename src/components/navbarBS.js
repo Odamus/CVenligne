@@ -41,9 +41,9 @@ function NavbarBS() {
               <Nav.Link href="/Contact" className="me-4 custom-link">
                 Contact
               </Nav.Link>
-              <Nav.Link href="/Mentions" className="me-4 custom-link">
+              {/* <Nav.Link href="/Mentions" className="me-4 custom-link">
                 Mentions légales
-              </Nav.Link>
+              </Nav.Link> */}
             </Nav>
           </Navbar.Collapse>
         </Container>
