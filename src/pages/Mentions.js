@@ -1,37 +1,56 @@
-import Accordion from "react-bootstrap/Accordion";
 import React from "react";
-import { Card } from "react-bootstrap";
+import {
+  Container,
+  Row,
+  Col,
+  DropdownDivider,
+  Accordion,
+} from "react-bootstrap";
 
 function Mentions() {
   return (
-    <Card>
-      <Accordion>
-        <Accordion.Item eventKey="0">
-          <Accordion.Header>Accordion Item #1</Accordion.Header>
-          <Accordion.Body>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </Accordion.Body>
-        </Accordion.Item>
-        <Accordion.Item eventKey="1">
-          <Accordion.Header>Accordion Item #2</Accordion.Header>
-          <Accordion.Body>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </Accordion.Body>
-        </Accordion.Item>
-      </Accordion>
-    </Card>
+    <Container fluid="md" style={{ marginTop: 68 }}>
+      <Row className="justify-content-center mb-4">
+        <Col md={8} className="text-center">
+          <h2 className="mt-5">Mentions légales</h2>
+          <DropdownDivider
+            className="divider"
+            style={{ width: "400px", marginBottom: 60, marginTop: 0 }}
+          />
+        </Col>
+      </Row>
+
+      <Row className="justify-content-center">
+        <Col md={8}>
+          <Accordion defaultActiveKey="0">
+            <Accordion.Item eventKey="0">
+              <Accordion.Header>Éditeur du site</Accordion.Header>
+              <Accordion.Body>
+                Ce site est édité par la société XYZ, immatriculée au RCS de
+                Paris sous le numéro 123 456 789.
+              </Accordion.Body>
+            </Accordion.Item>
+
+            <Accordion.Item eventKey="1">
+              <Accordion.Header>Hébergement</Accordion.Header>
+              <Accordion.Body>
+                Le site est hébergé par OVH - 2 rue Kellermann - 59100 Roubaix -
+                France.
+              </Accordion.Body>
+            </Accordion.Item>
+
+            <Accordion.Item eventKey="2">
+              <Accordion.Header>Propriété intellectuelle</Accordion.Header>
+              <Accordion.Body>
+                Tous les contenus présents sur le site sont protégés par les
+                droits d’auteur et sont la propriété exclusive de XYZ, sauf
+                mention contraire.
+              </Accordion.Body>
+            </Accordion.Item>
+          </Accordion>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 
