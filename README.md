@@ -84,3 +84,12 @@ Installation de bootstrap
 ### `npm install react-router-hash-link` for hash link
 
 Installation de navigation par hash
+
+### `npm install --save @fortawesome/react-fontawesome`
+
+`npm install --save @fortawesome/fontawesome-svg-core`
+`npm install --save @fortawesome/free-solid-svg-icons`
+(optionnel) pour les icônes "brand" comme Twitter, Github...
+`npm install --save @fortawesome/free-brands-svg-icons`
+(optionnel) pour les icônes "regular" (comme les icônes vides ou outline)
+`npm install --save @fortawesome/free-regular-svg-icons` for hash link

@@ -16,7 +16,12 @@ import {
 
 function mentions() {
   return (
-    <Container fluid="md" style={{ marginTop: 68 }}>
+    <Container
+      fluid="md"
+      style={{
+        marginTop: 68,
+      }}
+    >
       <Row className="justify-content-center mb-4">
         <Col md={8} className="text-center">
           <h2 className="mt-5">Mentions légales</h2>
@@ -73,11 +78,17 @@ function mentions() {
             </Accordion.Item>
 
             <Accordion.Item eventKey="2">
-              <Accordion.Header>Propriété intellectuelle</Accordion.Header>
+              <Accordion.Header>Crédits</Accordion.Header>
               <Accordion.Body>
-                Tous les contenus présents sur le site sont protégés par les
-                droits d'auteur et sont la propriété exclusive de XYZ, sauf
-                mention contraire.
+                <h3>Crédits</h3>
+                <p>Site développé par John Doe, étudiant du CEF.</p>
+                <p>
+                  Les images libres de droit sont issues du site{" "}
+                  <a href="https://pixabay.com/fr/" className="no-underline">
+                    Pixabay
+                  </a>
+                  .
+                </p>
               </Accordion.Body>
             </Accordion.Item>
           </Accordion>

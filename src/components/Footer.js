@@ -124,32 +124,68 @@ function Footer() {
 
           {/* Colonne 3 */}
           <Col xs={12} sm={6} md={3}>
-            <h5 className="h4 h-md-5">Dernières Réalisations</h5>
-            <ul>
+            <h5 className="h4 h-md-5">Mes dernières réalisations</h5>
+            <ul
+              className="list-unstyled"
+              style={{
+                paddingLeft: "0",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "start",
+                marginLeft: "100px",
+              }}
+            >
               <li>
-                <a href="/project1">Projet 1</a>
+                <span className="text-primary"> &gt; </span>{" "}
+                <a href="/project1" className="text-dark no-underline">
+                  Fresh food
+                </a>
               </li>
               <li>
-                <a href="/project2">Projet 2</a>
+                <span className="text-primary"> &gt; </span>{" "}
+                <a href="/project2" className="text-dark no-underline">
+                  Restaurant Akira
+                </a>
               </li>
               <li>
-                <a href="/project3">Projet 3</a>
+                <span className="text-primary"> &gt; </span>{" "}
+                <a href="/project3" className="text-dark no-underline">
+                  Espace bien-être
+                </a>
               </li>
             </ul>
           </Col>
 
           {/* Colonne 4 */}
           <Col xs={12} sm={6} md={3}>
-            <h5 className="h4 h-md-5">Derniers Articles</h5>
-            <ul>
+            <h5 className="h4 h-md-5">Mes derniers articles</h5>
+            <ul
+              className="list-unstyled"
+              style={{
+                paddingLeft: "0",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "start",
+                marginLeft: 55,
+              }}
+            >
               <li>
-                <a href="/blog/post1">Article 1</a>
+                <span className="text-primary"> &gt; </span>{" "}
+                <a href="/blog/post1" className="text-dark no-underline">
+                  Coder son site en HTML/CSS
+                </a>
               </li>
               <li>
-                <a href="/blog/post2">Article 2</a>
+                <span className="text-primary"> &gt; </span>{" "}
+                <a href="/blog/post2" className="text-dark no-underline">
+                  Vendre ses produits sur le web
+                </a>
               </li>
               <li>
-                <a href="/blog/post3">Article 3</a>
+                <span className="text-primary"> &gt; </span>{" "}
+                <a href="/blog/post3" className="text-dark no-underline">
+                  Se positionner sur Google
+                </a>
               </li>
             </ul>
           </Col>
