@@ -6,6 +6,13 @@ import {
   DropdownDivider,
   Accordion,
 } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faMapMarkerAlt,
+  faPhone,
+  faEnvelope,
+  faGlobe,
+} from "@fortawesome/free-solid-svg-icons";
 
 function Mentions() {
   return (
@@ -26,16 +33,41 @@ function Mentions() {
             <Accordion.Item eventKey="0">
               <Accordion.Header>Éditeur du site</Accordion.Header>
               <Accordion.Body>
-                Ce site est édité par la société XYZ, immatriculée au RCS de
-                Paris sous le numéro 123 456 789.
+                <h3>John Doe</h3>
+                <p>
+                  <FontAwesomeIcon icon={faMapMarkerAlt} /> 40 Rue Laure
+                  Diebold, 69009 Lyon, France
+                </p>
+                <p>
+                  <FontAwesomeIcon icon={faPhone} />{" "}
+                  <a href="tel:+33620304050">06 20 30 40 50</a>
+                </p>
+                <p>
+                  <FontAwesomeIcon icon={faEnvelope} />{" "}
+                  <a href="mailto:john.doe@gmail.com">john.doe@gmail.com</a>
+                </p>
               </Accordion.Body>
             </Accordion.Item>
 
             <Accordion.Item eventKey="1">
               <Accordion.Header>Hébergement</Accordion.Header>
               <Accordion.Body>
-                Le site est hébergé par OVH - 2 rue Kellermann - 59100 Roubaix -
-                France.
+                <h3>Always Data</h3>
+                <p>
+                  <FontAwesomeIcon icon={faMapMarkerAlt} /> 91 rue du Faubourg
+                  Saint Honoré<br>75008 Paris</br>
+                </p>
+                <p>
+                  <FontAwesomeIcon icon={faGlobe} className="me-2 text-info" />
+                  <a
+                    href="https://www.alwaysdata.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-decoration-none"
+                  >
+                    www.alwaysdata.com
+                  </a>
+                </p>
               </Accordion.Body>
             </Accordion.Item>
 
