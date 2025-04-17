@@ -14,7 +14,7 @@ import {
   faGlobe,
 } from "@fortawesome/free-solid-svg-icons";
 
-function Mentions() {
+function mentions() {
   return (
     <Container fluid="md" style={{ marginTop: 68 }}>
       <Row className="justify-content-center mb-4">
@@ -35,8 +35,8 @@ function Mentions() {
               <Accordion.Body>
                 <h3>John Doe</h3>
                 <p>
-                  <FontAwesomeIcon icon={faMapMarkerAlt} /> 40 Rue Laure
-                  Diebold, 69009 Lyon, France
+                  <FontAwesomeIcon icon={faMapMarkerAlt} /> 40 Rue Laure Diebold
+                  <br /> 69009 Lyon, France
                 </p>
                 <p>
                   <FontAwesomeIcon icon={faPhone} />{" "}
@@ -55,7 +55,8 @@ function Mentions() {
                 <h3>Always Data</h3>
                 <p>
                   <FontAwesomeIcon icon={faMapMarkerAlt} /> 91 rue du Faubourg
-                  Saint Honoré<br>75008 Paris</br>
+                  Saint Honoré <br />
+                  75008 Paris
                 </p>
                 <p>
                   <FontAwesomeIcon icon={faGlobe} className="me-2 text-info" />
@@ -75,7 +76,7 @@ function Mentions() {
               <Accordion.Header>Propriété intellectuelle</Accordion.Header>
               <Accordion.Body>
                 Tous les contenus présents sur le site sont protégés par les
-                droits d’auteur et sont la propriété exclusive de XYZ, sauf
+                droits d'auteur et sont la propriété exclusive de XYZ, sauf
                 mention contraire.
               </Accordion.Body>
             </Accordion.Item>
@@ -86,4 +87,4 @@ function Mentions() {
   );
 }
 
-export default Mentions;
+export default mentions;

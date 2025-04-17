@@ -84,11 +84,3 @@ Installation de bootstrap
 ### `npm install react-router-hash-link` for hash link
 
 Installation de navigation par hash
-
-### `npm install react-leaflet@next` for leaflet
-
-Installer la carte sous leaf
-
-### `npm install @fortawesome/react-fontawesome @fortawesome/free-solid-svg-icons @fortawesome/fontawesome-svg-core` for icons
-
-Installer les icones de contacts
