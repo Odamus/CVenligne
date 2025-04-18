@@ -1,30 +1,27 @@
 import React from "react";
 import { Card, Button } from "react-bootstrap";
+import "../components/BlogCard.css"; // on suppose que ce fichier existe
 
-const BlogCard = ({ title, description, image, link, footerDescription }) => {
+function BlogCard({ title, description, image, link, footerDescription }) {
   return (
-    <Card style={{ width: "100%" }}>
+    <Card className="h-100 d-flex flex-column blog-card shadow-sm">
       <Card.Img variant="top" src={image} alt={title} />
-      <Card.Body>
-        <Card.Title
-          as="h2"
-          className="fs-2 text-left"
-          style={{ fontWeight: "bold" }}
+      <Card.Body className="d-flex flex-column">
+        <Card.Title className="blog-card-title">{title}</Card.Title>
+        <Card.Text className="blog-card-text flex-grow-1">
+          {description}
+        </Card.Text>
+        <Button
+          variant="outline-primary"
+          href={link}
+          className="mt-auto blog-card-btn"
         >
-          {title}
-        </Card.Title>
-        <Card.Text className="fs-2 text-left">{description}</Card.Text>
-        <Button variant="primary" href={link} target="_blank" className="fs-2">
-          Lire la suite
+          Lire l'article
         </Button>
       </Card.Body>
-      <Card.Footer style={{ backgroundColor: "#f0f0f2", padding: "10px" }}>
-        <p style={{ margin: 0, fontSize: "1rem", color: "#555" }}>
-          {footerDescription}
-        </p>
-      </Card.Footer>
+      <Card.Footer className="text-muted">{footerDescription}</Card.Footer>
     </Card>
   );
-};
+}
 
 export default BlogCard;

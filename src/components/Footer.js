@@ -6,6 +6,7 @@ import "../components/Footer.css";
 
 function Footer() {
   const [showScroll, setShowScroll] = useState(false);
+  const [setNavColor] = useState("#F0F0F2");
 
   const handleScroll = () => {
     if (window.scrollY > 200) {
@@ -17,6 +18,7 @@ function Footer() {
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
+    setNavColor("#298eff");
   };
 
   useEffect(() => {
@@ -41,7 +43,7 @@ function Footer() {
         <Row>
           {/* Colonne 1 */}
           <Col xs={12} sm={6} md={3} className="text-start mb-4 mb-md-0">
-            <h5 className="h4 h-md-5">John Doe</h5>
+            <h5 className="footer-title">John Doe</h5>
             <address className="small">
               1234 Some Street, Some City, Some Country
             </address>
@@ -75,7 +77,7 @@ function Footer() {
 
           {/* Colonne 2 */}
           <Col xs={12} sm={6} md={3}>
-            <h5 className="h4 h-md-5 text-center">Liens utiles</h5>
+            <h5 className="footer-title text-center">Liens utiles</h5>
             <ul
               className="list-unstyled"
               style={{
@@ -88,7 +90,7 @@ function Footer() {
             >
               <li>
                 <span className="text-primary"> &gt; </span>{" "}
-                <a className="text-dark no-underline" href="/Home">
+                <a className="text-dark no-underline footer-link" href="/Home">
                   Accueil
                 </a>
               </li>
@@ -96,26 +98,35 @@ function Footer() {
                 <span className="text-primary"> &gt; </span>{" "}
                 <HashLink
                   to="/Home#section2"
-                  className="text-dark no-underline"
+                  className="text-dark no-underline footer-link"
                 >
                   À propos
                 </HashLink>
               </li>
               <li>
                 <span className="text-primary"> &gt; </span>{" "}
-                <a className="text-dark no-underline" href="/Services">
+                <a
+                  className="text-dark no-underline footer-link"
+                  href="/Services"
+                >
                   Services
                 </a>
               </li>
               <li>
                 <span className="text-primary"> &gt; </span>{" "}
-                <a className="text-dark no-underline" href="/Contact">
+                <a
+                  className="text-dark no-underline footer-link"
+                  href="/Contact"
+                >
                   Me contacter
                 </a>
               </li>
               <li>
                 <span className="text-primary"> &gt; </span>{" "}
-                <a className="text-dark no-underline" href="/mentions">
+                <a
+                  className="text-dark no-underline footer-link"
+                  href="/mentions"
+                >
                   Mentions légales
                 </a>
               </li>
@@ -124,7 +135,7 @@ function Footer() {
 
           {/* Colonne 3 */}
           <Col xs={12} sm={6} md={3}>
-            <h5 className="h4 h-md-5">Mes dernières réalisations</h5>
+            <h5 className="footer-title">Mes dernières réalisations</h5>
             <ul
               className="list-unstyled"
               style={{
@@ -132,24 +143,33 @@ function Footer() {
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "start",
-                marginLeft: "100px",
+                marginLeft: "60px",
               }}
             >
               <li>
                 <span className="text-primary"> &gt; </span>{" "}
-                <a href="/project1" className="text-dark no-underline">
+                <a
+                  href="/Realisations"
+                  className="text-dark no-underline footer-link"
+                >
                   Fresh food
                 </a>
               </li>
               <li>
                 <span className="text-primary"> &gt; </span>{" "}
-                <a href="/project2" className="text-dark no-underline">
+                <a
+                  href="/Realisations"
+                  className="text-dark no-underline footer-link"
+                >
                   Restaurant Akira
                 </a>
               </li>
               <li>
                 <span className="text-primary"> &gt; </span>{" "}
-                <a href="/project3" className="text-dark no-underline">
+                <a
+                  href="/Realisations"
+                  className="text-dark no-underline footer-link"
+                >
                   Espace bien-être
                 </a>
               </li>
@@ -158,7 +178,7 @@ function Footer() {
 
           {/* Colonne 4 */}
           <Col xs={12} sm={6} md={3}>
-            <h5 className="h4 h-md-5">Mes derniers articles</h5>
+            <h5 className="footer-title">Mes derniers articles</h5>
             <ul
               className="list-unstyled"
               style={{
@@ -166,24 +186,33 @@ function Footer() {
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "start",
-                marginLeft: 55,
+                marginLeft: 40,
               }}
             >
               <li>
                 <span className="text-primary"> &gt; </span>{" "}
-                <a href="/blog/post1" className="text-dark no-underline">
+                <a
+                  href="/blog/post1"
+                  className="text-dark no-underline footer-link"
+                >
                   Coder son site en HTML/CSS
                 </a>
               </li>
-              <li>
-                <span className="text-primary"> &gt; </span>{" "}
-                <a href="/blog/post2" className="text-dark no-underline">
+              <li style={{ display: "flex", alignItems: "center" }}>
+                <span className="text-primary me-2">&gt;</span>
+                <a
+                  href="/blog/post2"
+                  className="text-dark no-underline footer-link"
+                >
                   Vendre ses produits sur le web
                 </a>
               </li>
               <li>
                 <span className="text-primary"> &gt; </span>{" "}
-                <a href="/blog/post3" className="text-dark no-underline">
+                <a
+                  href="/blog/post3"
+                  className="text-dark no-underline footer-link"
+                >
                   Se positionner sur Google
                 </a>
               </li>
@@ -215,8 +244,8 @@ function Footer() {
             textAlign: "center",
             padding: "10px 0",
             marginBottom: "20px",
-            marginTop: "0px", // Espace entre le footer et la ligne de copyright
-            width: "100%", // Le fond #444 occupe toute la largeur
+            marginTop: "0px",
+            width: "100%",
           }}
         >
           <p className="small" style={{ marginBottom: "0px" }}>

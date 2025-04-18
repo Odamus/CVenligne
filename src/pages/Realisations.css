@@ -4,3 +4,38 @@ body, html {
     width: 100%;
     overflow-x: hidden; /* Empêcher le défilement horizontal */
   }
+
+
+  .real-title {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  
+  .real-subtitle {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+  
+  /* Responsive ajustement mobile */
+  @media (max-width: 576px) {
+    .real-title {
+      font-size: 1.8rem;
+    }
+  
+    .real-subtitle {
+      font-size: 0.95rem;
+    }
+  }
+  
+  /* Grand écran */
+  @media (min-width: 992px) {
+    .real-subtitle {
+      font-size: 1.4rem;
+    }
+  }

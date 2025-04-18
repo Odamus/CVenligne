@@ -6,7 +6,7 @@
   
   .banner-title {
     font-size: 2.5rem;
-    font-weight: bold;
+    font-weight: 600;
   }
   
   .banner-section p {
@@ -15,7 +15,7 @@
   
   /* Style pour le titre principal */
   .main-title {
-    font-weight: bold;
+    font-weight: 600;
     color: #333;
     margin-bottom: 40px;
   }
@@ -30,11 +30,11 @@
   }
   
   .service-card:hover {
-    transform: translateY(-10px); /* Effet de survol */
+    background-color: #cde1f8;
   }
   
   .service-card .card-title {
-    font-weight: bold;
+    font-weight: 600;
     color: #007bff; 
   }
   

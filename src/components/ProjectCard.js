@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, Button } from "react-bootstrap";
+import "../components/ProjectCard.css";
 
 const ProjectCard = ({
   title,
@@ -31,9 +32,10 @@ const ProjectCard = ({
         </div>
       </Card.Body>
       <Card.Footer style={{ backgroundColor: "#f0f0f2", padding: "10px" }}>
-        <p style={{ margin: 0, fontSize: "1rem", color: "#555" }}>
+        {/* <p style={{ margin: 0, fontSize: "1rem", color: "#555" }}> */}
+        <small className="footer-description text-muted">
           {footerDescription}
-        </p>
+        </small>
       </Card.Footer>
     </Card>
   );

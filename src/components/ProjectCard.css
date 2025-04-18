@@ -1,0 +1,34 @@
+.project-card {
+    font-family: 'Nunito Sans', sans-serif;
+  }
+  
+  .project-title {
+    font-weight: 600;
+    font-size: 1.3rem;
+  }
+  
+  .project-description {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-description {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 0.9rem;  /* Par défaut, petite taille pour mobile */
+    font-weight: 400;
+    color: #6c757d;  /* Gris classique de Bootstrap */
+  }
+  
+  /* Sur tablette */
+  @media (min-width: 768px) {
+    .footer-description {
+      font-size: 1.15rem;
+    }
+  }
+  
+  /* Sur laptop/desktop */
+  @media (min-width: 992px) {
+    .footer-description {
+      font-size: 1.25rem;
+    }
+  }

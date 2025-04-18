@@ -53,17 +53,17 @@ function Realisations() {
 
       <Container className="w-100 mt-5">
         {/* Titre de la section Portfolio */}
-        <h1 className="text-center mb-0 fs-1 fs-sm-2 fs-md-3">Portfolio</h1>
-        <p className="text-center mt-0 fs-6 fs-sm-5 fs-md-3">
+        <h1 className="real-title text-center mb-0">Portfolio</h1>
+        <p className="real-subtitle text-center">
           Voici quelques-unes de mes réalisations.
         </p>
 
-        <DropdownDivider className="divider" style={{ width: "400px" }} />
+        <DropdownDivider className="divider mb-5" style={{ width: "400px" }} />
 
         {/* Grille des projets */}
         <Row className="justify-content-center">
           {projects.map((project, index) => (
-            <Col key={index} xs={12} sm={6} md={4} className={`d-flex mb-4`}>
+            <Col key={index} xs={12} sm={6} md={4} className="d-flex mb-4">
               <div className="w-100 h-100 d-flex">
                 <ProjectCard
                   title={project.title}

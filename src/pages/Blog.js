@@ -14,7 +14,7 @@ function Blog() {
     },
     {
       image: "/img/croissance.jpg",
-      title: "Fresh Food",
+      title: "Vendre ses produits sur le web",
       description:
         "Some quick example text to build on the card title and make up the bulk of the card's content.",
       link: "https://example.com/project2",
@@ -22,7 +22,7 @@ function Blog() {
     },
     {
       image: "/img/google.jpg",
-      title: "Fresh Food",
+      title: "Se positionner sur Google",
       description:
         "Some quick example text to build on the card title and make up the bulk of the card's content.",
       link: "https://example.com/project3",
@@ -30,7 +30,7 @@ function Blog() {
     },
     {
       image: "/img/screens.jpg",
-      title: "Fresh Food",
+      title: "Coder en responsive design",
       description:
         "Some quick example text to build on the card title and make up the bulk of the card's content.",
       link: "https://example.com/project4",
@@ -38,7 +38,7 @@ function Blog() {
     },
     {
       image: "/img/seo.jpg",
-      title: "Fresh Food",
+      title: "Techniques de référencement",
       description:
         "Some quick example text to build on the card title and make up the bulk of the card's content.",
       link: "https://example.com/project5",
@@ -46,7 +46,7 @@ function Blog() {
     },
     {
       image: "/img/technos.png",
-      title: "Fresh Food",
+      title: "Apprendre à coder",
       description:
         "Some quick example text to build on the card title and make up the bulk of the card's content.",
       link: "https://example.com/project6",
@@ -65,20 +65,25 @@ function Blog() {
         <h1 className="text-center mb-0" style={{ marginBottom: "0px" }}>
           Blog
         </h1>
-        <p className="text-center mt-0" style={{ marginTop: "0px" }}>
+        <p
+          className="text-center mt-0 blog-subtitle"
+          style={{ marginTop: "0px", fontSize: 25 }}
+        >
           Retrouvez ici quelques articles sur le développement web.
         </p>
         <DropdownDivider className="divider" style={{ width: "400px" }} />
         <Row>
           {blogs.map((project, index) => (
-            <Col key={index} xs={12} sm={6} md={4} className="mb-4">
-              <BlogCard
-                title={project.title}
-                description={project.description}
-                image={project.image}
-                link={project.link}
-                footerDescription={project.footerDescription}
-              />
+            <Col key={index} xs={12} sm={6} md={4} className="mb-4 d-flex">
+              <div className="w-100 h-100 d-flex">
+                <BlogCard
+                  title={project.title}
+                  description={project.description}
+                  image={project.image}
+                  link={project.link}
+                  footerDescription={project.footerDescription}
+                />
+              </div>
             </Col>
           ))}
         </Row>

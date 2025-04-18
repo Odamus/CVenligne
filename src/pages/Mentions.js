@@ -22,6 +22,7 @@ function mentions() {
         marginTop: 68,
       }}
     >
+      <meta name="robots" content="noindex, nofollow" />
       <Row className="justify-content-center mb-4">
         <Col md={8} className="text-center">
           <h2 className="mt-5">Mentions légales</h2>

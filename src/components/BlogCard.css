@@ -1,0 +1,62 @@
+.blog-card {
+    font-family: 'Nunito Sans', sans-serif;
+  }
+  
+  /* Titre de la carte */
+  .blog-card-title {
+    font-size: 2rem; /* Plus grand que le texte */
+    font-weight: 600;   /* En gras */
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Texte de la carte */
+  .blog-card-text {
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+  
+  /* Bouton */
+  .blog-card-btn {
+    font-size: 0.875rem;     /* taille texte */
+    padding: 6px 12px;       /* espace interne autour du texte */
+    align-self: start;       /* ✅ aligne à gauche dans le flex container */
+    background-color: #0d6efd; /* bleu Bootstrap */
+    color: white;
+    font-size: 0.875rem;
+    padding: 6px 12px;
+    font-weight: 600;
+    border: 2px solid #0d6efd;
+    border-radius: 4px;
+    width: fit-content;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+      }
+      
+      .blog-card-btn:hover {
+        background-color: white;
+        color: #0d6efd;
+      }
+
+      .blog-subtitle {
+        font-size: 0.9rem;       /* Très lisible sur mobile */
+        font-weight: 400;
+      }
+      
+      @media (min-width: 576px) {
+        .blog-subtitle {
+          font-size: 1rem;       /* Petits écrans */
+        }
+      }
+      
+      @media (min-width: 768px) {
+        .blog-subtitle {
+          font-size: 1.15rem;    /* Tablette */
+        }
+      }
+      
+      @media (min-width: 992px) {
+        .blog-subtitle {
+          font-size: 1.25rem;    /* Desktop */
+        }
+      }
