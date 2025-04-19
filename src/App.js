@@ -9,7 +9,6 @@ import Services from "./pages/Services";
 import Blog from "./pages/Blog";
 import Mentions from "./pages/Mentions";
 import Footer from "./components/Footer";
-import { NavColorProvider } from "./context/NavColorContext";
 
 function App() {
   return (
@@ -17,7 +16,6 @@ function App() {
       <head>
         <meta name="robots" content="noindex, nofollow" />
       </head>
-      <NavColorProvider>
         <NavbarBS />
         <Routes>
           <Route path="/" element={<Home />}></Route>
@@ -28,7 +26,6 @@ function App() {
           <Route path="/mentions" element={<Mentions />}></Route>
         </Routes>
         <Footer />
-      </NavColorProvider>
     </div>
   );
 }

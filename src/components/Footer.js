@@ -6,7 +6,6 @@ import "../components/Footer.css";
 
 function Footer() {
   const [showScroll, setShowScroll] = useState(false);
-  const [setNavColor] = useState("#F0F0F2");
 
   const handleScroll = () => {
     if (window.scrollY > 200) {
@@ -18,7 +17,6 @@ function Footer() {
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
-    setNavColor("#298eff");
   };
 
   useEffect(() => {
