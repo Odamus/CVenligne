@@ -30,8 +30,8 @@ function Home() {
       >
         <div className="background-section">
           <Row className="text-center w-100">
-            <Col>
-              <h1 className="text-white mb-6 fs-0 fs-sm-1 fs-md-4">
+            <Col className="titreSection">
+              <h1 className="text-white mb-6 custom-title">
                 Bienvenue, je suis John DOE
               </h1>
               <h2 className="text-white mb-4 fs-2 fs-sm-6 fs-md-3">
