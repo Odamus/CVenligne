@@ -93,7 +93,7 @@ function Footer() {
             >
               <li>
                 <span className="text-primary"> &gt; </span>{" "}
-                <a className="text-dark no-underline footer-link" href="/Home">
+                <a className="text-dark no-underline footer-link" href="/">
                   Accueil
                 </a>
               </li>
