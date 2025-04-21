@@ -25,10 +25,10 @@ function mentions() {
       <meta name="robots" content="noindex, nofollow" />
       <Row className="justify-content-center mb-4">
         <Col md={8} className="text-center">
-          <h2 className="mt-5">Mentions légales</h2>
+          <h2 className="mt-5 fw-bold text-center display-4">Mentions légales</h2>
           <DropdownDivider
-            className="divider"
-            style={{ width: "400px", marginBottom: 60, marginTop: 0 }}
+            className="divider "
+            style={{ width: "250px", marginBottom: 60, marginTop: 0 }}
           />
         </Col>
       </Row>
@@ -37,7 +37,7 @@ function mentions() {
         <Col md={8}>
           <Accordion defaultActiveKey="0">
             <Accordion.Item eventKey="0">
-              <Accordion.Header>Éditeur du site</Accordion.Header>
+              <Accordion.Header className="mt-0">Éditeur du site</Accordion.Header>
               <Accordion.Body>
                 <h3>John Doe</h3>
                 <p>
@@ -56,7 +56,7 @@ function mentions() {
             </Accordion.Item>
 
             <Accordion.Item eventKey="1">
-              <Accordion.Header>Hébergement</Accordion.Header>
+              <Accordion.Header className="mt-0">Hébergement</Accordion.Header>
               <Accordion.Body>
                 <h3>Always Data</h3>
                 <p>
@@ -79,7 +79,7 @@ function mentions() {
             </Accordion.Item>
 
             <Accordion.Item eventKey="2">
-              <Accordion.Header>Crédits</Accordion.Header>
+              <Accordion.Header className="mt-0">Crédits</Accordion.Header>
               <Accordion.Body>
                 <h3>Crédits</h3>
                 <p>Site développé par John Doe, étudiant du CEF.</p>
