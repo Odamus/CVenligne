@@ -26,7 +26,7 @@ function NavbarBS() {
               height="30"
               className="shadow-sm"
             />
-            <span className="ms-2 text-light">Odam SVAY</span>
+            <span className="ms-2 text-light">JOHN DOE</span>
           </Navbar.Brand>
 
           {/* Toggle pour menu hamburger sur mobile */}

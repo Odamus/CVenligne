@@ -6,7 +6,7 @@ import "../components/Footer.css";
 
 function Footer() {
   const [showScroll, setShowScroll] = useState(false);
-  const [setNavColor] = useState("#F0F0F2");
+  const [clicked, setClicked] = useState(false); // j'ajoute un état pour savoir si le bouton a été cliqué
 
   const handleScroll = () => {
     if (window.scrollY > 200) {
@@ -18,7 +18,9 @@ function Footer() {
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
-    setNavColor("#298eff");
+    setClicked(true); // Je change l'état quand le bouton est cliqué
+    // Réinitialisation après 1 seconde pour revenir à l'état normal
+    setTimeout(() => setClicked(false), 1000); 
   };
 
   useEffect(() => {
@@ -44,10 +46,11 @@ function Footer() {
           {/* Colonne 1 */}
           <Col xs={12} sm={6} md={3} className="text-start mb-4 mb-md-0">
             <h5 className="footer-title">John Doe</h5>
-            <address className="small">
-              1234 Some Street, Some City, Some Country
+            <address className="medium mb-0">
+              40 Rue Laure Diebold <br/>
+              69009 Lyon, France
             </address>
-            <p className="small">+123 456 7890</p>
+            <p className="medium">Téléphone : 06 20 30 40 50</p>
             <div>
               <a
                 href="https://github.com/johndoe"
@@ -90,14 +93,14 @@ function Footer() {
             >
               <li>
                 <span className="text-primary"> &gt; </span>{" "}
-                <a className="text-dark no-underline footer-link" href="/Home">
+                <a className="text-dark no-underline footer-link" href="/">
                   Accueil
                 </a>
               </li>
               <li>
                 <span className="text-primary"> &gt; </span>{" "}
                 <HashLink
-                  to="/Home#section2"
+                  to="/#section2"
                   className="text-dark no-underline footer-link"
                 >
                   À propos
@@ -192,7 +195,7 @@ function Footer() {
               <li>
                 <span className="text-primary"> &gt; </span>{" "}
                 <a
-                  href="/blog/post1"
+                  href="/Blog"
                   className="text-dark no-underline footer-link"
                 >
                   Coder son site en HTML/CSS
@@ -201,7 +204,7 @@ function Footer() {
               <li style={{ display: "flex", alignItems: "center" }}>
                 <span className="text-primary me-2">&gt;</span>
                 <a
-                  href="/blog/post2"
+                  href="/Blog"
                   className="text-dark no-underline footer-link"
                 >
                   Vendre ses produits sur le web
@@ -210,7 +213,7 @@ function Footer() {
               <li>
                 <span className="text-primary"> &gt; </span>{" "}
                 <a
-                  href="/blog/post3"
+                  href="/Blog"
                   className="text-dark no-underline footer-link"
                 >
                   Se positionner sur Google
@@ -221,14 +224,25 @@ function Footer() {
         </Row>
 
         {/* Bouton Retour en haut */}
-        {showScroll && (
+          {showScroll && (
           <Button
             variant="primary"
             onClick={scrollToTop}
             className="position-fixed bottom-0 end-0 mb-4 me-4"
-            style={{ zIndex: 1000 }}
+            style={{
+              zIndex: 1000,
+              backgroundColor: clicked ? "#298eff" : "#444",
+              borderColor: clicked ? "#298eff" : "#444", 
+            }}
           >
-            ↑
+            <span
+              style={{
+                color: "white", 
+                fontSize: "20px", 
+              }}
+            >
+              ↑
+            </span>
           </Button>
         )}
       </Container>
