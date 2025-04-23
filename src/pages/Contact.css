@@ -14,8 +14,8 @@
 }
 
 h2 {
-  margin-top: 30px; /* Un peu d'espace avant les titres */
-  margin-bottom: 10px; /* Un peu d'espace sous les titres */
+  margin-top: 30px; 
+  margin-bottom: 10px; 
   font-size: 28px;
   font-weight: bold;
 }
@@ -35,7 +35,7 @@ h2 {
   margin-top: 60px; /* Plus d'espace avant le formulaire */
 }
 
-/* Ajuster le style du sous-titre (Formulaire de contact) */
+
 .contact-container .contact-title {
   font-size: 30px;
   margin-bottom: 20px;
@@ -46,7 +46,7 @@ h2 {
   margin-bottom: 40px;
 }
 
-/* Ajouter une bordure autour de la carte pour une meilleure visibilité */
+
 .map-responsive {
   border: 1px solid #ddd;
   margin-top: 20px;

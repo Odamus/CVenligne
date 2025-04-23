@@ -13,14 +13,14 @@
     font-size: 1.2rem;
   }
   
-  /* Style pour le titre principal */
+
   .main-title {
     font-weight: 600;
     color: #333;
     margin-bottom: 40px;
   }
   
-  /* Style pour les cartes de service */
+
   .service-card {
     border: 1px solid #ddd;
     border-radius: 8px;

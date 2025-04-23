@@ -1,8 +1,5 @@
-.titreSection {
-  margin-top: 88px;
-}
-
 h1 {
+    font-size: 4rem;
     font-weight: 600;
     margin-bottom: 60px;
     font-family: 'Nunito Sans', sans-serif;
@@ -35,24 +32,4 @@ h2 {
     margin: 0 auto 20px;
   }
 
-  p {
-    font-family: 'Nunito Sans', sans-serif;
-    font-weight: 400;
-  }
 
-  .custom-title {
-    font-size: 2rem; /* taille par défaut sur mobile */
-    font-weight: bold;
-  }
-  
-  @media (min-width: 768px) { /* md = tablette et laptop */
-    .custom-title {
-      font-size: 3.5rem;
-    }
-  }
-  
-  @media (min-width: 1200px) { /* lg = desktop large */
-    .custom-title {
-      font-size: 4.5rem;
-    }
-  }

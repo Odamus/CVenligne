@@ -22,7 +22,7 @@ body, html {
     margin-top: 0.5rem;
   }
   
-  /* Responsive ajustement mobile */
+
   @media (max-width: 576px) {
     .real-title {
       font-size: 1.8rem;
@@ -33,7 +33,7 @@ body, html {
     }
   }
   
-  /* Grand écran */
+
   @media (min-width: 992px) {
     .real-subtitle {
       font-size: 1.4rem;
